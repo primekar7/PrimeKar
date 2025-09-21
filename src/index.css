@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-green: #0B4436;
+  --gold-primary: #FFD700;
+  --gold-secondary: #D4AF37;
+  --gold-gradient: linear-gradient(135deg, #FFD700 0%, #D4AF37 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Custom Tailwind Colors */
+@layer base {
+  :root {
+    --color-dark-green: 11 68 54;
+    --color-gold-primary: 255 215 0;
+    --color-gold-secondary: 212 175 55;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gold gradient background utility */
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #FFD700 0%, #D4AF37 100%);
+}
+
+/* Text gradient utility */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFD700 0%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Dark green background utility */
+.bg-dark-green {
+  background-color: #0B4436;
+}
+
+/* Gold primary text utility */
+.text-gold-primary {
+  color: #FFD700;
+}
+
+/* Gold secondary text utility */
+.text-gold-secondary {
+  color: #D4AF37;
+}
+
+/* Dark green text utility */
+.text-dark-green {
+  color: #0B4436;
+}
+
+/* Shimmer animation for buttons */
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Hover glow effect for buttons */
+.btn-glow {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFD700;
+}
+
+/* Mobile sticky button positioning */
+@media (max-width: 768px) {
+  .mobile-sticky-bottom {
+    padding-bottom: 80px;
+  }
+}
+
+/* Enhanced focus states for accessibility */
+.focus\:ring-gold:focus {
+  outline: none;
+  ring-width: 2px;
+  ring-color: #FFD700;
+  ring-opacity: 0.5;
+}
+
+/* Smooth transitions for all interactive elements */
+button, a, .transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Custom input styles */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #FFD700;
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  
+  .hero-text {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

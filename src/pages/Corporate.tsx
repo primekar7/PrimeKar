@@ -98,14 +98,14 @@ const Corporate: React.FC = () => {
       {/* Inquiry Form Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          {/* <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-dark-green mb-4">Get Started Today</h2>
             <p className="text-xl text-gray-600">
               Ready to set up your corporate account? Fill out the form below and our team will contact you within 24 hours.
             </p>
-          </div>
+          </div> */}
 
-          <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
+          {/* <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -192,7 +192,7 @@ const Corporate: React.FC = () => {
                 </button>
               </div>
             </form>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

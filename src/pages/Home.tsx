@@ -31,7 +31,7 @@ const Home: React.FC = () => {
               <span className="text-4xl md:text-5xl">Always On Time.</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
-              Luxury chauffeur service for airport transfers, executives, and special occasions.
+              Premium service for airport transfers, executives, seniors and special occasions.
             </p>
             
             {/* Download App Button */}
@@ -80,14 +80,14 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 fade-in">
             <h2 className="text-4xl font-bold text-dark-green mb-4">Why Choose PrimeKar?</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Experience luxury transportation that exceeds expectations with our premium limousine service.</p>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Experience transportation that exceeds expectations with our premium service.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 fade-in">
               <Crown className="h-12 w-12 text-gold-primary mb-4" />
               <h3 className="text-2xl font-bold text-dark-green mb-4">Premium Fleet</h3>
-              <p className="text-gray-600">Our luxury vehicles are meticulously maintained and equipped with premium amenities for your comfort.</p>
+              <p className="text-gray-600">Our vehicles are meticulously maintained and equipped with premium amenities for your comfort.</p>
             </div>
             
             <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 fade-in">

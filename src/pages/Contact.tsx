@@ -73,6 +73,9 @@ const Contact: React.FC = () => {
                 </div>
               </div>
 
+             
+            </div>
+            <div className="fade-in">
               <div className="mt-8 p-6 bg-white rounded-lg shadow-lg">
                 <h3 className="font-bold text-dark-green text-lg mb-3">Quick Booking</h3>
                 <p className="text-gray-600 mb-4">For immediate bookings, call us directly or use our mobile app.</p>
@@ -80,8 +83,7 @@ const Contact: React.FC = () => {
                   Download App
                 </button>
               </div>
-            </div>
-
+              </div>
             {/* Contact Form */}
             {/* <div className="fade-in">
               <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -147,7 +149,7 @@ const Contact: React.FC = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-dark-green mb-4 fade-in">Our Service Area</h2>
@@ -156,14 +158,14 @@ const Contact: React.FC = () => {
           
           <div className="bg-gray-200 h-96 rounded-lg flex items-center justify-center fade-in">
             {/* Placeholder for map */}
-            <div className="text-center">
+            {/* <div className="text-center">
               <MapPin className="h-16 w-16 text-gold-primary mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-dark-green mb-2">Calgary, Alberta</h3>
               <p className="text-gray-600">Interactive map integration available</p>
             </div>
-          </div>
-        </div>
-      </section>
+          </div> */}
+        {/* </div> */}
+      {/* </section>} */}
     </div>
   );
 };
